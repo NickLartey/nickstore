@@ -319,9 +319,9 @@
                 row.innerHTML = `
                     <td><img src="${item.image}" alt="${item.name}"> ${item.name}</td>
                     <td>${item.variant}</td>
-                    <td>$${item.price.toFixed(2)}</td>
+                    <td>₵${item.price.toFixed(2)}</td>
                     <td>${item.quantity}</td>
-                    <td>$${itemTotal.toFixed(2)}</td>
+                    <td>₵${itemTotal.toFixed(2)}</td>
                     <td><button class="remove-btn" onclick="removeFromCart(${item.id}, '${item.variant}')">Remove</button></td>
                 `;
                 cartItems.appendChild(row);
