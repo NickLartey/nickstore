@@ -265,7 +265,7 @@
                 productDiv.innerHTML = `
                     <img src="${product.image}" alt="${product.name}">
                     <h3>${product.name}</h3>
-                    <p>$${product.price.toFixed(2)}</p>
+                    <p>₵${product.price.toFixed(2)}</p>
                     <select id="variant-${product.id}">
                         ${product.variants.map(variant => `<option value="${variant}">${variant}</option>`).join('')}
                     </select>
